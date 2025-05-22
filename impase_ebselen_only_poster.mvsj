@@ -1,0 +1,37 @@
+{
+  "version": "0.1",
+  "root": {
+    "type": "root",
+    "children": [
+      {
+        "type": "download",
+        "params": {
+          "url": "https://raw.githubusercontent.com/danielmarke/poster/main/impase_ebselen_only_poster.cif",
+          "isBinary": false
+        },
+        "children": [
+          {
+            "type": "parse",
+            "params": {
+              "format": "mmcif"
+            },
+            "children": [
+              {
+                "type": "structure",
+                "children": [
+                  {
+                    "type": "representation",
+                    "params": {
+                      "type": "cartoon",
+                      "color": "chain-id"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
